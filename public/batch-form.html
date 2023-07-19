@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Batch Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Load Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="js/firebaseConfig.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">&#8592;</a> <!-- Unicode for left arrow -->
+  </nav>  
+  <div class="container">
+    <h1>Batch Form</h1>
+    <form id="batchForm">
+      <label for="strain">Strain</label>
+      <select id="strain" name="strain" required></select>
+      <label for="plantCount">Plant Count</label>
+      <input type="number" id="plantCount" name="plantCount" required>
+      <label for="harvest">Harvest</label>
+      <select id="harvest" name="harvest" required></select>
+      <input type="checkbox" id="finishedCheckbox" name="finishedCheckbox">
+      <label for="finishedCheckbox">Finished</label>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <script src="js/redirect.js"></script>
+  <script src="js/batch-form-handler.js"></script>
+</body>
+</html>

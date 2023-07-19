@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weight Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Load Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="js/firebaseConfig.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">&#8592;</a> <!-- Unicode for left arrow -->
+  </nav>
+  <div class="container">
+    <h1>Weight Form</h1>
+    <form id="weightForm">
+      <label for="materialType">Material Type</label>
+      <select id="materialType" name="materialType" required>
+        <option value="Large Buds">Large Buds</option>
+        <option value="Medium Buds">Medium Buds</option>
+        <option value="Small Buds">Small Buds</option>
+        <option value="Extract Material">Extract Material</option>
+        <option value="Waste">Waste</option>
+      </select>
+      <label for="weight">Weight</label>
+      <input type="number" id="weight" name="weight" required>
+      <label for="batch">Batch</label>
+      <select id="batch" name="batch" required></select>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <script src="js/redirect.js"></script>
+  <script src="js/weight-form-handler.js"></script>
+</body>
+</html>

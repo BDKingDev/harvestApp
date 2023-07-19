@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Harvest App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Load Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="js/firebaseConfig.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Harvest App</h1>
+    <button onclick="window.location.href='harvest-form.html'">Go to Harvest Form</button>
+    <button onclick="window.location.href='batch-form.html'">Go to Batch Form</button>
+    <button onclick="window.location.href='weight-form.html'">Go to Weight Form</button>
+  </div>
+  <script src="js/redirect.js"></script>
+</body>
+</html>
